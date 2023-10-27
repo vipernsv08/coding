@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+</body>
+     <script>
+    function isPalindrome(str)
+{
+   //Remove spaces and convert string to lowercase
+  str = str.replace(/\s/g,'').toLowercase();
+  // check if the string is equal to it's reverse
+  return str == reverseString(str);
+}
+   function reverseString(str) 
+   {
+        return str.split('').rreverse().join('');
+   }
+   // Example usage:
+   let string =prompt( 'Input a word')
+   let result = isPalindrome(string);
+   document.write(result); //Output: true
+</script>
+</body>
+</html>
